@@ -1,0 +1,107 @@
+@use "../../styles/colors";
+
+.button {
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: none;
+  transition: all 0.3s ease;
+  text-transform: none !important;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+// === Sizes ===
+.large {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.medium {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+// === Variants ===
+.primary {
+  background-color: colors.$primary-purple;
+  color: colors.$white;
+
+  &:hover {
+    background-color: colors.$dark-purple;
+  }
+
+  &:disabled {
+    background-color: colors.$light-gray;
+    color: colors.$disabled-purple;
+  }
+}
+
+.tableAction {
+  background: transparent;
+  border: none;
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #1083b7;
+    background-color: rgba(16, 131, 183, 0.05);
+  }
+
+  img,
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.secondary {
+  background-color: colors.$gray;
+  color: colors.$dark-gray;
+
+  &:hover {
+    background-color: colors.$gray;
+  }
+}
+
+.dark {
+  background-color:  colors.$dark-gray;
+  color: colors.$white;
+
+  &:hover {
+    background-color:  colors.$dark-gray;
+  }
+}
+
+.black {
+  background-color: colors.$black;
+  color: colors.$white;
+
+  &:hover {
+    background-color: colors.$hover-black;
+  }
+}
+
+.icon {
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

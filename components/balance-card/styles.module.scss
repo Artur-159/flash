@@ -1,0 +1,90 @@
+@use "../../styles/colors";
+
+.card {
+  flex: 1 1 calc(33.33% - 16px);
+  max-width: calc(33.33% - 16px);
+  min-width: 240px;
+  box-sizing: border-box;
+  padding: 28px 20px 16px;
+  border-radius: 16px;
+  background-color: colors.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+
+  @media (max-width: 1024px) {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.with_top_border {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--top-border-color);
+    border-radius: 8px;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-left: 8px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.balance {
+  color: colors.$purple;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer {
+  margin-top: 16px;
+  display: flex;
+  border-top: 1px solid colors.$grayF0;
+}
+
+.column {
+  flex: 1;
+  padding: 16px;
+}
+
+.border_left {
+  border-left: 1px solid colors.$grayF0;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.sub_text {
+  font-size: 14px;
+  color: colors.$gray400;
+}
