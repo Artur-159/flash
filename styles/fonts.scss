@@ -1,0 +1,253 @@
+// fonts.scss
+
+// ===== Font Variables ===== //
+$font-roboto: "Roboto", sans-serif;
+$font-mardoto: "Mardoto", sans-serif;
+$font-bebas: "Bebas", sans-serif;
+
+// ===== Font Faces ===== //
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-BlackItalic.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Italic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-MediumItalic.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/FlashFonts/FlashFontsRoboto/text/Roboto-ThinItalic.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+// Bebas fonts
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue Book.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue Thin.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../assets/fonts/Bebas/BebasNeue.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Mardoto fonts
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-MediumItalic.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto";
+  src: url("../assets/fonts/Mardoto/Mardoto-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+// ===== Font Usage ===== //
+[lang="en"],
+[lang="ru"] p {
+  font-family: $font-roboto;
+}
+
+[lang="en"],
+[lang="ru"] a {
+  font-family: $font-mardoto;
+}
+
+[lang="hy"] a,
+p {
+  font-family: $font-mardoto;
+}
+
+h1,
+h2 {
+  font-family: $font-bebas;
+}
