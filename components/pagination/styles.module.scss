@@ -1,0 +1,74 @@
+.pagination {
+  display: flex;
+  gap: 8px;
+
+  .pagination_btn {
+    font-size: 14px !important;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #888;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      background-color: #e0d5ea;
+    }
+
+    &.active {
+      font-size: 14px !important;
+      color: #fff;
+      background: #89359c;
+    }
+  }
+
+  .totalPage_btn {
+    font-size: 14px !important;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #555;
+
+    &.active {
+      background-color: #89359c;
+      color: #fff;
+    }
+  }
+
+  button {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    background-color: #f2f2f2;
+    transition: all 0.2s ease;
+
+    &:first-child,
+    &:last-child {
+      font-size: 16px;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      color: #ccc;
+      background-color: #f5f5f5;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #aaa;
+    min-width: 32px;
+    height: 32px;
+  }
+}

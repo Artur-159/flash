@@ -1,0 +1,25 @@
+@use "../../../styles/colors";
+
+.no_data {
+  text-align: center;
+  padding: 40px 0;
+  color: colors.$dark-purple;
+  background-color: #fff;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #999;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../styles/colors";
+@use "../../styles/fonts";
+
+.main_input input[type="number"]::-webkit-inner-spin-button,
+.main_input input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: textfield;
+}
+
+.placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: "Mardoto";
+}
+
+.required_sign {
+  color: colors.$purple;
+}
+
+.error {
+  color: colors.$error-red;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: colors.$dark-gray;
+}
+
+.main_input {
+  :global(.MuiInputBase-root) {
+    height: 48px;
+    background-color: colors.$white;
+    border-radius: 8px;
+    font-family: "Mardoto";
+    font-size: 14px;
+  }
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: colors.$gray;
+    border-width: 1px;
+    transition: border-color 0.2s ease;
+  }
+
+  :global(.Mui-focused .MuiOutlinedInput-notchedOutline) {
+    border-color: colors.$purple !important;
+  }
+
+  :global(.Mui-error .MuiOutlinedInput-notchedOutline) {
+    border-color: colors.$error-red;
+  }
+
+  :global(input) {
+    padding: 12px 16px;
+    color: colors.$black;
+    font-family: "Mardoto";
+  }
+}
+
+.main_input__disabled {
+  :global(.MuiInputBase-root) {
+    background-color: colors.$light-gray;
+    border-radius: 8px;
+  }
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: colors.$gray;
+  }
+
+  :global(input) {
+    color: colors.$light-gray;
+    cursor: not-allowed;
+  }
+}

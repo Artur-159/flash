@@ -1,0 +1,116 @@
+@use "../../../styles/colors";
+@use "../../../styles/mixins";
+@use "../../../styles/fonts" as fonts;
+
+.dropdown_block {
+  position: relative;
+  border: 1px solid colors.$gray;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-left: 32px;
+  font-family: fonts.$font-mardoto;
+
+  img {
+    position: relative;
+    z-index: 20;
+  }
+
+  .dropdown_checkbox {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    max-width: 84px;
+    cursor: pointer;
+    background: transparent;
+
+    span {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  .down_icon {
+    width: 17px;
+    height: 8px;
+    margin-left: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: rotate(0);
+  }
+
+  .drop_menu {
+    position: absolute;
+    width: 100%;
+    top: 33px;
+    right: 0;
+    margin: 7px 0 0;
+    padding: 0;
+    list-style-type: none;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+    background-color: colors.$white;
+    border: 1px solid colors.$gray;
+    border-radius: 8px;
+
+    li {
+      &:first-child {
+        border-radius: 8px 8px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 8px 8px;
+      }
+
+      &:hover {
+        @media (hover: hover) {
+          background: colors.$light-gray;
+        }
+      }
+
+      &.selected {
+        background: colors.$light-gray;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 7px 8px;
+        font-size: 14px;
+        color: #000;
+        transition: all 0.3s;
+        white-space: nowrap;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .menu_icon {
+      margin-right: 12px;
+    }
+  }
+
+  .dropdown_checkbox {
+    &:checked {
+      + .icon .down_icon {
+        transform: rotate(180deg);
+      }
+
+      + .icon + .drop_menu {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  .personal_img {
+    width: auto;
+    height: auto;
+    margin-right: 12px;
+  }
+}

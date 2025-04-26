@@ -1,0 +1,47 @@
+@use "../../styles/colors";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main";
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 80px 1fr;
+    flex-grow: 1;
+    background-color: colors.$grayF8;
+  }
+
+  .fullWidthLayout {
+    display: block;
+    background-color: colors.$grayF8;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .header {
+    grid-area: header;
+    width: 100%;
+    position: relative;
+  }
+
+  .children {
+    grid-area: main;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .fullWidthLayout .children {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0;
+  }
+}

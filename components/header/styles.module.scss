@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+@use "../../styles/mixins";
+
+.header {
+  background-color: colors.$white;
+  border-bottom: 1px solid colors.$gray;
+  position: relative;
+  z-index: 11;
+  width: 100%;
+
+  .inner_block {
+    @include mixins.container();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    @media (max-width: 500px) {
+      padding: 15px;
+    }
+  }
+}

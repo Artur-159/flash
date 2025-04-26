@@ -1,0 +1,20 @@
+.icons_block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    display: block;
+    transition: 0.6s;
+
+    @media (max-width: 500px) {
+      width: 28px;
+      height: 28px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}

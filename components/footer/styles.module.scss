@@ -1,0 +1,116 @@
+@use "../../styles/colors";
+@use "../../styles/mixins";
+@use "../../styles/fonts" as fonts;
+
+.container {
+  @include mixins.container();
+  position: relative;
+  z-index: 20;
+  background: colors.$dark-violet;
+
+  @media (max-width: 500px) {
+    overflow: hidden;
+  }
+
+  .footer_list {
+    margin: 0 32px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 22px 0;
+    list-style-type: none;
+    font-family: fonts.$font-mardoto;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+
+    li {
+      font-size: 12px;
+      line-height: 20px;
+      color: colors.$white;
+      color: colors.$white;
+
+      @media (max-width: 800px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 500px) {
+        padding-top: 16px;
+      }
+
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+
+        @media (max-width: 500px) {
+          gap: 18px;
+        }
+
+        span {
+          position: relative;
+          font-size: 14px;
+          line-height: 14px;
+
+          @media (max-width: 500px) {
+            font-size: 12px;
+            white-space: nowrap;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: colors.$white;
+            background: colors.$white;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    // .icons_block {
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 12px;
+
+    //   img {
+    //     display: block;
+
+    //     @media (max-width: 500px) {
+    //       width: 28px;
+    //       height: 28px;
+    //     }
+    //   }
+    // }
+
+    .mobile_only {
+      display: none;
+
+      @media (max-width: 500px) {
+        display: block;
+        background: colors.$white;
+        color: colors.$dark-violet;
+        background: colors.$white;
+        color: colors.$dark-violet;
+        width: 100%;
+        padding: 8px 0 8px 15px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    .desktop_only {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}

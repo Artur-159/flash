@@ -1,0 +1,40 @@
+@use "../../styles/colors";
+
+.textarea {
+  padding: 5px;
+  resize: none;
+  outline: none;
+  border-color: colors.$gray;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+
+  &:focus-visible {
+    border: 2px solid colors.$purple;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    color: colors.$gray400;
+  }
+}
+
+.textarea_error {
+  padding: 20px;
+  border: 2px solid #d32f2f;
+  &:focus-visible {
+    border: 4px solid #d32f2f !important;
+  }
+}
+
+.placeholder {
+  margin-bottom: 8px;
+  font-family: "Mardoto";
+}
+
+.required_sign {
+  color: colors.$purple;
+}
+
+.error {
+  color: #d32f2f;
+}

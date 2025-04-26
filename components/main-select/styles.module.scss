@@ -1,0 +1,10 @@
+@use "../../styles/colors";
+
+.placeholder {
+  margin-bottom: 8px;
+  font-family: "Mardoto";
+}
+
+.required_sign {
+  color: colors.$purple;
+}

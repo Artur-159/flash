@@ -1,0 +1,12 @@
+.select {
+  div {
+    &:nth-child(4) {
+      z-index: 9999;
+    }
+  }
+}
+
+.error {
+  margin-top: 5px;
+  color: #d32f2f;
+}
