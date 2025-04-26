@@ -1,0 +1,21 @@
+@use "../../../../styles/colors";
+
+.add_friend_form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  .title {
+    font-family: "Mardoto";
+    color: colors.$dark-gray;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.6px;
+  }
+
+  .message {
+    width: 100%;
+  }
+}

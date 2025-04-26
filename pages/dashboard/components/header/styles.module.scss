@@ -1,0 +1,40 @@
+@use "../../../../styles/mixins";
+@use "../../../../styles/colors";
+
+.header {
+  @include mixins.flexCenter(space-between, 20px);
+  margin-bottom: 24px;
+
+  .title {
+    color: colors.$black;
+    font-family: "Mardoto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.6px;
+  }
+
+  > a {
+    color: #82858e;
+
+    /* underline button */
+    font-family: "Mardoto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    transition: 0.6s;
+
+    &:hover {
+      color: colors.$blue;
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@use "../../../../styles/colors";
+
+.table_body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid colors.$gray;
+  border-radius: 0 0 10px 10px;
+}
+
+// .transaction {
+//   margin-top: 24px;
+//   border-radius: 10px;
+// }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 14px 30px;
+  border-top: 1px solid #f1f1f1;
+  font-size: 14px;
+  text-align: center;
+  background-color: colors.$white;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #212121;
+}
+
+.cell img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.edit_btn,
+.delete_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+}
+
+.edit_btn {
+  color: #3f51b5;
+}
+
+.edit_btn:hover {
+  color: #2c3e91;
+}
+
+.delete_btn {
+  color: #d32f2f;
+}
+
+.delete_btn:hover {
+  color: #b71c1c;
+}

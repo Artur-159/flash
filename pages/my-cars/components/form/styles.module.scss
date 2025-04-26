@@ -1,0 +1,78 @@
+@use "../../../../styles/colors";
+
+.title {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+.input_fields_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.product_type_section {
+  margin-top: 20px;
+}
+
+.section_label {
+  font-size: 14px !important;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: colors.$black !important;
+}
+
+.product_type_options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 10px;
+}
+
+.product_type_option {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+
+  input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.submit_button_wrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    padding: 14px 46px;
+  }
+}
+
+.error_text {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.custom_radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin-left: 0 !important;
+
+    span {
+      font-weight: 300;
+    }
+  }
+}

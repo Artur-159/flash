@@ -1,0 +1,16 @@
+.top_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  button {
+    padding: 10px 36px;
+  }
+}

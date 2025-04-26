@@ -1,0 +1,67 @@
+@use "../../../../styles/colors";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.top_block {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.checkbox_group {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 10px;
+  margin-top: 24px;
+}
+
+.tab {
+  font-size: 16px;
+  color: #a3a3a3;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 8px;
+  position: relative;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #5e35b1;
+  }
+
+  &.active {
+    color: #2d2d2d;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #7b1fa2;
+      border-radius: 2px;
+    }
+  }
+}
+
+.filter_button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: colors.$white;
+  color: colors.$gray400;
+  font-size: 14px;
+
+  &:hover {
+    @media (hover: hover) {
+      opacity: 0.7 !important;
+      background: colors.$white;
+    }
+  }
+}

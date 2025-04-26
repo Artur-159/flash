@@ -1,0 +1,18 @@
+@use "../../../../styles/mixins";
+@use "../../../../styles/colors";
+
+.modal_title {
+  color: colors.$dark-gray;
+  font-family: "Mardoto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.input_block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,25 @@
+@use "../../styles/colors";
+@use "../../styles/mixins";
+
+.wrapper {
+  @include mixins.context_container(1535px, 0 32px);
+
+  .header {
+    @include mixins.flexCenter(space-between);
+    margin: 55px 0 24px 0;
+
+    .title {
+      color: colors.$black;
+
+      font-family: Mardoto;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px; /* 140% */
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .search_friend {
+    max-width: 340px;
+  }
+}

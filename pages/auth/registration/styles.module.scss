@@ -1,0 +1,97 @@
+@use "../../../styles/colors";
+@use "../../../styles/fonts" as fonts;
+
+.info_text {
+  font-size: 14px;
+  line-height: 24px;
+  color: colors.$gray82;
+
+  &:nth-child(3) {
+    margin-top: 30px;
+  }
+}
+
+.modal_reg_btn {
+  margin-top: 20px;
+}
+
+.reg {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+
+  .reg_title {
+    font-size: 32px;
+    line-height: 100%;
+    color: colors.$dark-violet;
+    margin-bottom: 12px;
+    font-family: fonts.$font-bebas;
+  }
+
+  .reg_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    label {
+      font-family: fonts.$font-mardoto;
+    }
+  }
+
+  .reg_input {
+    width: 100%;
+    > div {
+      height: auto;
+    }
+  }
+
+  .link {
+    text-decoration: underline;
+    color: colors.$purple;
+  }
+
+  .reg_btn {
+    width: 100%;
+    background: colors.$purple;
+    color: colors.$white;
+    padding: 14px;
+    font-family: fonts.$font-mardoto;
+  }
+
+  .link_block {
+    text-align: center;
+    margin-top: 20px;
+
+    span {
+      color: colors.$gray82;
+    }
+  }
+
+  .checkbox_block {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: fonts.$font-mardoto;
+    color: colors.$gray82;
+  }
+
+  .reg_checkbox {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+.resend_btn {
+  text-decoration: underline;
+  background: transparent;
+  color: colors.$gray82;
+  padding: 0;
+  &:hover {
+    background: transparent;
+    color: colors.$gray82;
+    opacity: 0.8;
+  }
+}

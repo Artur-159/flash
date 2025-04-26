@@ -1,0 +1,122 @@
+@use "../../../../styles/colors";
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.modal {
+  width: 420px;
+  height: 100%;
+  background: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field_group {
+  display: flex;
+  gap: 12px;
+}
+
+.date_group {
+  display: flex;
+  gap: 12px;
+
+  > div {
+    width: 100%;
+  }
+
+  input {
+    flex: 1;
+    color: colors.$gray400;
+    display: flex;
+  }
+}
+
+.btn_boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 20px;
+  margin-top: auto;
+
+  .clear,
+  .apply {
+    width: 100%;
+    max-width: 180px;
+    border: none;
+    padding: 14px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      @media (hover: hover) {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .clear {
+    background: colors.$gray400;
+    color: colors.$gray500;
+  }
+
+  .apply {
+    background: colors.$dark-purple;
+    color: colors.$white;
+  }
+}
+
+.checkbox_group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #4a4a4a;
+  }
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  width: max-content;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+
+  input {
+    width: 16px;
+    height: 16px;
+    accent-color: colors.$light-purple;
+  }
+}

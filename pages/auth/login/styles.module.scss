@@ -1,0 +1,66 @@
+@use "../../../styles/mixins";
+@use "../../../styles/colors";
+@use "../../../styles/fonts.scss";
+
+.container {
+  @include mixins.flexCenter(center);
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    .login_title {
+      color: colors.$dark-violet;
+      font-family: fonts.$font-bebas;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      margin-bottom: 32px;
+    }
+
+    .login_form {
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .login_input {
+        width: 100%;
+      }
+    }
+
+    .forgot_password {
+      text-align: end;
+      margin-bottom: 28px;
+      font-family: fonts.$font-mardoto;
+    }
+
+    .btn_log_reg {
+      width: 100%;
+
+      .btn {
+        width: inherit;
+        padding: 14px;
+        font-size: 17px;
+        margin-bottom: 20px;
+
+        a {
+          color: colors.$white;
+        }
+      }
+
+      .register_block {
+        text-align: center;
+      }
+    }
+
+    .link {
+      font-size: 14px;
+      text-decoration: underline;
+      color: colors.$purple;
+    }
+  }
+}

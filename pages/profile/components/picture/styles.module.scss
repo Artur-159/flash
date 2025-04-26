@@ -1,0 +1,102 @@
+@use "../../../../styles/colors";
+
+.profile_picture_preview {
+  position: relative;
+  margin-bottom: 15px;
+  margin-right: 36px;
+
+  .preview_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid colors.$gray;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+  }
+
+  .preview_image:hover {
+    transform: scale(1.05);
+  }
+
+  .placeholder {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$grayF0;
+    color: colors.$gray400;
+    font-size: 14px;
+    border: 2px solid colors.$gray600;
+    cursor: default;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &.clickable {
+      cursor: pointer;
+
+      &:hover {
+        background-color: colors.$grayF8;
+        transform: scale(1.05);
+      }
+    }
+
+    .photo_icon {
+      position: absolute;
+      top: 80px;
+      right: 0;
+    }
+  }
+
+  .icons_container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    p {
+      color: colors.$white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 17px;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    .update_icon {
+      position: absolute;
+      bottom: 10px;
+      left: 18px;
+    }
+
+    .zoom_icon {
+      position: absolute;
+      bottom: 10px;
+      right: 18px;
+    }
+  }
+
+  &:hover {
+    .icons_container {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

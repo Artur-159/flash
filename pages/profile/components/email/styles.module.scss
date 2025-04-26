@@ -1,0 +1,7 @@
+@use "../../../../styles/colors";
+
+.cancel_btn {
+  color: colors.$black !important;
+  font-size: 15px !important;
+  text-decoration: underline !important;
+}
